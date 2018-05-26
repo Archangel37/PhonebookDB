@@ -1,12 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataBasePhones
 {
+    [Table("CellPhone")]
     public class CellPhone
     {
         [Key]
-        public int Id;
-        public string manufacturer;
-        public string model;
+        public int Id { get; set; }
+        public string manufacturer { get; set; }
+        public string model { get; set; }
     }
 }
